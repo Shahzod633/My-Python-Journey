@@ -2,3 +2,12 @@
 a=float(input())
 ts=(5/9)*(a-32)
 print(ts) 
+
+# Dog age сколько лет собаке в человеческом возрасте
+
+''' a=float(input())
+if a>2:
+    print(21+(4*(a-2)))
+elif a==1 or a==2:
+    print(a*10.5) '''
+
