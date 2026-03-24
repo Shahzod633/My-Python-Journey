@@ -19,5 +19,13 @@ ma=max(a,b,c,d,e)
 print('Наименьшее число', '=', mi)
 print('Наибольшее число =', ma) '''
 
+# Абсолютная сумма 5 чисел Напишите программу, которая вычисляет сумму их модулей
+''' a=abs((float(input())))
+b=abs((float(input())))
+c=abs((float(input())))
+d=abs((float(input())))
+e=abs((float(input())))
+print(abs(a+b+c+d+e))  '''
+
 
 
