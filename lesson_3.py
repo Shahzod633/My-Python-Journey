@@ -27,5 +27,18 @@ d=abs((float(input())))
 e=abs((float(input())))
 print(abs(a+b+c+d+e))  '''
 
+# Интересное число
+''' a=int(float(input()))
+a3 =a%10
+a2 = a%100//10
+a1 = a//100
+mi=min(a3,a2,a1)
+ma=max(a3,a2,a1)
+if (ma-mi)==(a3+a2+a1-mi-ma):
+    print('Число интересное')
+else:
+    print('Число неинтересное')'''
+
+
 
 
