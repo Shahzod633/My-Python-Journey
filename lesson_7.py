@@ -68,3 +68,13 @@ if 'суббота' in a or 'воскресенье' in a :
 else:
     print('NO')
 '''
+
+#Корректный email 
+a=input()
+if '@' in a and '.' in a:
+    print("YES")
+else:
+    print("NO")
+
+
+
