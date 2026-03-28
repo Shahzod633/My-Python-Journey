@@ -17,7 +17,7 @@ team_length=len(team)
 print("Футбольная Команда", team, "имеет длину", team_length, "символов.")'''
 
 #Даны названия трёх городов. Напишите программу, которая определяет самое короткое и самое длинное название города.
-city1=str(input())
+'''city1=str(input())
 city2=str(input())
 city3=str(input())
 city1_length=int(len(city1))
@@ -43,3 +43,13 @@ elif city3_length==min(city1_length, city2_length, city3_length) and city1_lengt
 elif city3_length==min(city1_length, city2_length, city3_length) and city2_length==max(city1_length, city2_length, city3_length):
     print(city3)
     print(city2)
+'''
+
+# Арифметические строки
+'''a, b, c=len(input()), len(input()), len(input())
+if (2*b-c-a)*(2*c-b-a)*(2*a-b-c) == 0 :
+    print('YES')
+else:
+    print('NO')
+'''
+
