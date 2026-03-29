@@ -22,6 +22,15 @@ y2=float(input())
 p=sqrt(pow((x1-x2), 2) + pow((y1-y2), 2))
 print(p)
 '''
+# Тригонометрическое выражение
+'''from math import pow, pi, sin, cos, tan, radians
+x=radians(float(input()))
+M=sin(x)+cos(x)+pow(tan(x), 2)
+print(M)
+'''
+
+
+
 
 
 
