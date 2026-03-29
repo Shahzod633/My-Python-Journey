@@ -6,5 +6,17 @@ C=2*pi*R
 print(S)
 print(C)
 
+#  На вход поступает число сумируйте пол и потолок для этого числа  
+'''from math import ceil,  floor
+a=float(input())
+ca=ceil(a)
+fa=floor(a)
+print(ca+fa)
+'''
+
+
+
+
+
 
 
