@@ -10,3 +10,9 @@ for i in range(9):
 print('G')
 
 '''
+
+# Повторяй за мной 1
+'''a=input()
+b=int(input())
+for i in range(b):
+    print(a)'''
