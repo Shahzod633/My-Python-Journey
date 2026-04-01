@@ -16,3 +16,12 @@ print('G')
 b=int(input())
 for i in range(b):
     print(a)'''
+
+# Звёздный прямоугольник
+'''a=int(input())
+for i in range(a):
+        print("*******************") '''
+        
+
+
+
