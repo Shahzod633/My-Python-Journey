@@ -21,10 +21,22 @@ for i in range(b):
 '''a=int(input())
 for i in range(a):
         print("*******************") '''
-
+'''
 for i in range(4):
-    print(i, end='*')
-        
+    print(i, end='*')'''
+
+'''for i in range(4):
+    j = i + 1
+    print(i, j) '''
+
+a=input()
+for i in range(10):
+    print(i, a)
+
+
+
+
+
 
 
 
