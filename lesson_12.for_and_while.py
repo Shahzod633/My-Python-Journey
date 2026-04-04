@@ -39,3 +39,5 @@ if a>b:
             print(j)
 elif a==b:
     print(a)
+
+input("Нажми Enter чтобы закрыть...") 
