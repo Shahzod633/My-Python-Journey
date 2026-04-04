@@ -20,6 +20,6 @@ for j in range(c):
     print(j+1, (a * (b / 100 + 1) ** j) )
     print(j+1, (a * (b / 100 + 1) ** j) - (a * (b / 100 + 1) ** (j-1)) )
 
-
+input("Нажми Enter чтобы закрыть...")  
 
 
