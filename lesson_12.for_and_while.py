@@ -16,7 +16,7 @@ for j in range(1, 11):
 '''
 
 # Последовательность чисел 2 
-a=int(input())
+'''a=int(input())
 b=int(input())
 for j in range(a, b+1):
     if j%10==9:
@@ -24,4 +24,18 @@ for j in range(a, b+1):
     elif  j%15==0:
         print(j)
     elif j%17==0:
+        print(j)'''
+
+# последовательность чисел 3
+a=int(input())
+b=int(input())
+for j in range(a, b+1):
+    if a<b:
         print(j)
+    else:
+        break
+if a>b:
+    for j in range(a, b-1, -1):
+            print(j)
+elif a==b:
+    print(a)
