@@ -66,6 +66,13 @@ for i in range(1, n+1):
     counter = counter + 1/i
 print(counter - log(n))
 
-
+# На вход программе подаётся натуральное число n Напишите программу, которая подсчитывает сумму тех чисел от 1 до n (включительно), , квадрат которых оканчивается на 2 на  5  или на 8.
+from math import pow
+n=int(input())
+counter=0
+for j in range(1, n+1):
+    if pow(j,2)%10==2 or pow(j,2)%10==5 or pow(j,2)%10==8:
+        counter+=j
+print(counter)
 
 
