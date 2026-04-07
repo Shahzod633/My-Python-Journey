@@ -51,13 +51,20 @@ print('Сумма цифр:', a1 + a2 + a3)
 print('Произведение цифр:', a1 * a2 * a3)'''
 
 # Сумма чисел
-n=int(input())
+'''n=int(input())
 total=0
 for _ in range(n):
     num=int(input())
     total=total+num
-print(total)
+print(total)'''
     
+# Асимптотическое приближение
+from math import log 
+counter = 0
+n = int(input())
+for i in range(1, n+1):
+    counter = counter + 1/i
+print(counter - log(n))
 
 
 
