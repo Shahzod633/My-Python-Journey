@@ -75,4 +75,9 @@ for j in range(1, n+1):
         counter+=j
 print(counter)
 
-
+# Факториал
+n=int(input())
+counter=1
+for j in range(1, n+1):
+    counter = counter*j
+print(counter)
