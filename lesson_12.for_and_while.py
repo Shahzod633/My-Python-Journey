@@ -110,4 +110,15 @@ for _ in range(10):
     elif num%2!=0:
         print("NO")
         break 
+
+# Знакочередующаяся сумма
+n=int(input())
+total=0
+Total=0
+for j in range(1, n+1):
+    if j%2==0:
+        total+=j
+    else:
+        Total+=j
+print(Total-total)
         
