@@ -98,4 +98,16 @@ for j in range(1,n+1):
         total+=j
     
 print(total)
+
+#  Напишите программу, которая считывает последовательность из 10 целых чисел и определяет, является ли каждое из них чётным или нет.
+total=0
+for _ in range(10):
+    num=int(input())
+    if num%2==0:
+        total+=1
+        if total==10:
+            print("YES")
+    elif num%2!=0:
+        print("NO")
+        break 
         
