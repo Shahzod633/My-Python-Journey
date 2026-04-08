@@ -81,3 +81,21 @@ counter=1
 for j in range(1, n+1):
     counter = counter*j
 print(counter)
+
+#Без нулей 0️
+total=1
+for _ in range(1, 11):
+    num=int(input())
+    if num>0 or num<0:
+        total*=num
+print(total)
+
+# Сумма делителей
+n=int(input())
+total=0
+for j in range(1,n+1):
+    if n%j==0:
+        total+=j
+    
+print(total)
+        
