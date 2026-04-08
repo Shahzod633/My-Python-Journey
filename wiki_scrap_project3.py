@@ -1,13 +1,32 @@
-import requests                                         # мы импортируем библитеку который даёт запрос на сайт 
-from bs4 import BeautifulSoup                           # Расширение BeautifulSoup!!! 
-url= "https://en.wikipedia.org/wiki/Tajikistan"         # здесь я указал ссылку который в долнешем будт проверять или анализировать 
-headers = {'User-Agent': 'Mozilla/5.0'}                 # А здесь я использую загаловок это как Python не сам ишеет а через браузер mozillsa 5.0
-response=requests.get(url, headers=headers)             # А это ответ от сайта отклик 
-print(f'статус ответа {response.status_code}')          # здесь после придедушей команды он провкряет статус ответа от сайта или ответ отрецателтьный или положительный
-soup=BeautifulSoup(response.text,'html.parser')         # после положительного ответа
-sections=soup.find_all('h2')                            # А здесь команда sections ишет все раздели кода HTML в котором есть код h2 и вводит из всех потомучто я написал команду find.all
-print(f'Найдено разделов: {len(sections)}')             # Выводит все найденнные разделы и их количество 
-print("-" * 20)                                         # -------------------------------------
-for section in sections:                                # А это цыкл который связанно со строкой 7 sections - он делает цыкличный запрос на сайт или ишеет все найденный h2 
-    title=section.text.strip()                          # названии Загаловеи которое програмама находит и спомошю .strip убирает пробелы или лишние символы 
-    print(f'Раздел: {title}')                           # А это ввывод всех Загаловков 
+# мы импортируем библитеку который даёт запрос на сайт 
+# Расширение BeautifulSoup!!! 
+import requests 
+from bs4 import BeautifulSoup
+# здесь я указал ссылку который в долнешем будт проверять или анализировать                            
+url="https://somon.tj/nedvizhimost/prodazha-kvartir/hudzhand/"
+ # А здесь я использую загаловок это как Python не сам ишеет а через браузер mozillsa 5.0 
+headers = {'User-Agent': 'Mozilla/5.0'}     
+ # здесь после придедушей команды он провкряет статус ответа от сайта или ответ отрецателтьный или положительный           
+response=requests.get(url, headers=headers)             
+print(f'статус ответа {response.status_code}')          
+soup=BeautifulSoup(response.text,'html.parser')       
+cards=soup.find_all('div', class_='advert')  
+print(f'Найдено разделов: {len(cards)}')             
+print("-" * 40)                                        
+for card in cards:
+    # Ищем элементы
+    title_el = card.find('a', class_='advert__content-title')
+    price_el = card.find('div', class_='advert__content-header')
+    
+    # ПРОВЕРКА (как на Stepik): если оба элемента существуют
+    if title_el and price_el:
+        # .replace('\n', ' ') убирает прыжки на новую строку внутри текста
+        title = title_el.text.strip().replace('\n', ' ')
+        price = price_el.text.strip().replace('\n', ' ')
+        link = "https://somon.tj" + title_el.get('href')
+
+        # Выводим всё в одну строку или компактным блоком без лишних пустых print
+        print(f"🏠 {title}")
+        print(f"💰 Цена: {price}")
+        print(f"🔗 {link}")
+        print("-" * 10) # Короткая линия, чтобы не растягивать экран
