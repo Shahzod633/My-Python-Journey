@@ -143,4 +143,11 @@ y=0
 for j in range(1, n+1):
     print(x,end=' ')
     x,y=x+y,x 
+
+# До КОНЦА 1
+text=input()
+while text!="КОНЕЦ":
+    print(text)
+    text=input()
+
         
