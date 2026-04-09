@@ -165,3 +165,16 @@ while a>=0:
     total+=a
     a=int(input())
 print(total)
+
+# Количество пятёрок 
+a=int(input())
+total=0
+while a>0 and a<6:
+    if a==5:
+        total+=1
+    a=int(input())
+print(total)
+
+
+
+
