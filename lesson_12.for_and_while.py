@@ -175,6 +175,13 @@ while a>0 and a<6:
     a=int(input())
 print(total)
 
+# У Тимура есть список никнеймов соцсети FriendsGram. Напишите программу, которая выводит первый никнейм, не содержащий символ нижнего подчёркивания _
+a=input()
+while "_" in a:
+    a=input()
+while '_' not in a:
+    print(a)
+    break
 
 
 
