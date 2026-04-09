@@ -135,4 +135,12 @@ for j in range(n):
         max2=num
 print(max1)
 print(max2)
+
+# Число Фибоначчи
+n=int(input())
+x=1
+y=0
+for j in range(1, n+1):
+    print(x,end=' ')
+    x,y=x+y,x 
         
