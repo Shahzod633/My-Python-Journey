@@ -302,4 +302,15 @@ while a!=0:
     if Sdigit<digit:
         print('NO')
         break
+
+# Четные цифры 2
+n = input()
+total = 0
+for digit_str in n:
+    digit = int(digit_str)
+    if digit%2==0:
+        total+=1
+        print(str(total)+"-"+'я четная цифра равна', digit)
+if total==0:
+    print('Четных цифр в числе нет')
         
