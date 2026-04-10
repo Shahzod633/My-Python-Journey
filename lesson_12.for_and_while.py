@@ -200,4 +200,23 @@ while a>=1:
     a-=1
 print(total)
 
+#  Временной промежуток
+h=int(input())
+m=int(input())
+h1=int(input())
+m1=int(input())
+start=h*60+m
+stop=h1*60+m1
+if h<10 or m<10:
+    print("%02d:%02d" % (h,m))
+else:
+    print(h,m, sep=":")
+while start!=stop:
+    start+=1
+    h3=start//60
+    m3=start%60
+    if h3<10 or m3<10:
+        print("%02d:%02d" % (h3,m3))
+    else:
+        print(h3,m3, sep=':')
 
