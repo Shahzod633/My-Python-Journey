@@ -226,3 +226,18 @@ while a!=0:
     last_d= a%10
     print(last_d)
     a //= 10
+
+# max и min
+maax=0
+miin=9
+last=0
+n=int(input())
+while n>0:
+      last=n%10
+      if last>maax:
+          maax=last
+      if last<miin:
+          miin=last
+      n =n//10
+print('Максимальная цифра равна', maax)
+print('Минимальная цифра равна', miin) 
