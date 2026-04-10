@@ -241,3 +241,26 @@ while n>0:
       n =n//10
 print('Максимальная цифра равна', maax)
 print('Минимальная цифра равна', miin) 
+
+# Дано натуральное число. Напишите программу, которая вычисляет: сумму его цифр; произведение его цифр; среднее арифметическое его цифр; его первую цифру; сумму его первой и последней цифры.
+total=0         
+summ=0            
+proi=1          
+A=0             
+f=0             
+n=int(input())
+nl=n%10
+while n!=0:
+    last_d = n%10
+    total += 1
+    summ += last_d
+    proi *= last_d
+    n //= 10
+A=summ/total
+f=f+last_d+nl
+print(summ)
+print(total)
+print(proi)
+print(A)
+print(last_d)
+print(f)         
