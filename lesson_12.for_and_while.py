@@ -289,3 +289,17 @@ while n>0:
         break
 if maax==miin:
     print('YES')
+
+## Дано натуральное число. Напишите программу, которая определяет, является ли последовательность его цифр при просмотре справа налево упорядоченной по неубыванию.
+a=int(input())
+while a!=0:
+    digit=a%10
+    a //=10
+    Sdigit=a%10
+    if Sdigit==0:
+        print('YES')
+        break
+    if Sdigit<digit:
+        print('NO')
+        break
+        
