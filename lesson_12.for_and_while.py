@@ -220,3 +220,9 @@ while start!=stop:
     else:
         print(h3,m3, sep=':')
 
+# Обратный порядок 1
+a=int(input())
+while a!=0:
+    last_d= a%10
+    print(last_d)
+    a //= 10
