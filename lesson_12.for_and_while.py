@@ -264,3 +264,10 @@ print(proi)
 print(A)
 print(last_d)
 print(f)         
+
+# вторая цифра  Напишите программу, которая определяет его вторую (с начала) цифру.
+a=int(input())
+while a>9:
+    last_d=a%10
+    a //= 10
+print(last_d)
