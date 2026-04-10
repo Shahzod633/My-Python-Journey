@@ -271,3 +271,21 @@ while a>9:
     last_d=a%10
     a //= 10
 print(last_d)
+
+# Дано натуральное число. Напишите программу, которая определяет, состоит ли указанное число из одинаковых цифр.
+maax=0
+miin=9
+last=0
+n=int(input())
+while n>0:
+      last=n%10
+      if last>maax:
+          maax=last
+      if last<miin:
+          miin=last
+      n =n//10
+      if maax!=miin:
+        print('NO')
+        break
+if maax==miin:
+    print('YES')
