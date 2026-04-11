@@ -313,4 +313,17 @@ for digit_str in n:
         print(str(total)+"-"+'я четная цифра равна', digit)
 if total==0:
     print('Четных цифр в числе нет')
+
+# Наименьший делитель
+a=int(input())
+for j in range(2, a+1):
+        if a%j==0:
+            print(j)
+            break
+      
+
+
+
+
+
         
