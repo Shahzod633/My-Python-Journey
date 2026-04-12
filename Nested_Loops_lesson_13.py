@@ -26,3 +26,9 @@ for i in range(1, a+1):
     print(i, '+', j, '=', i+j)
   print()
 
+# Численный треугольник 
+a=int(input())
+for i in range(1):
+  for j in range(1, a+1):
+    print(str(j)*j)
+  print()
