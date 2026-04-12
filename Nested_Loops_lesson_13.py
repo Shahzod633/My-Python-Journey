@@ -32,3 +32,18 @@ for i in range(1):
   for j in range(1, a+1):
     print(str(j)*j)
   print()
+
+# Звёздный треугольник
+n = int(input())
+mid = n // 2 + 1
+count = 0
+
+for i in range(1, n + 1):
+    if i <= mid:
+        count += 1 
+    else:
+        count -= 1
+    
+    print('*' * count) 
+
+  
