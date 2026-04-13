@@ -83,6 +83,19 @@ n=int(input())
 total_sum = sum(factorial(i) for i in range(1, n + 1))
 print(total_sum)        
         
+# Подставь и узнаешь
+n = int(input())
+m = int(input())
+solution = False
+for emoji1 in range(1, n):
+    for emoji2 in range(1, n):
+        for emoji3 in range(1, n):
+            if emoji1 + 3 * emoji2 + 2 * emoji3 == m:
+                print(f"{emoji1} + 3×{emoji2} + 2×{emoji3} = {m}")
+                solution = True
+if not solution:
+    print("При заданных n и m решений не существует.")
+
 
 
 
