@@ -110,6 +110,14 @@ for i in range(a, b + 1):
         best_num = i
 print(best_num, max_sum)
 
+# Численный треугольник 3
+n = int(input())
+for i in range(1, n + 1):
+    for j in range(1, i + 1):
+        print(j, end='')
+    for j in range(i - 1, 0, -1):
+        print(j, end='')
+    print()
 
 
 
