@@ -77,7 +77,12 @@ for i in range(a, b + 1):
     if is_prime:
         print(i)
 
-
+# Сумма факториалов 
+from math import factorial 
+n=int(input())
+total_sum = sum(factorial(i) for i in range(1, n + 1))
+print(total_sum)        
+        
 
 
 
