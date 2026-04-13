@@ -1,5 +1,7 @@
 # мы импортируем библитеку который даёт запрос на сайт 
-# Расширение BeautifulSoup!!! 
+# Расширение BeautifulSoup!!!
+import tkinter as tk
+from tkinter import messagebox  
 import requests 
 from bs4 import BeautifulSoup
 # здесь я указал ссылку который в долнешем будт проверять или анализировать                            
@@ -30,3 +32,11 @@ for card in cards:
         print(f"💰 Цена: {price}")
         print(f"🔗 {link}")
         print("-" * 10) # Короткая линия, чтобы не растягивать экран
+
+# Frontend
+root = tk.Tk()
+root.title("Scraper")
+root.geometry("400x300")
+root.configure(bg="#1f1f2f")
+# Заголовок
+title = tk.Label(root, text="🏠 Scraper", font=("Arial", 20, "bold"), bg="#1e1e2f", fg="black")
