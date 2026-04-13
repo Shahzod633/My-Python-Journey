@@ -95,6 +95,24 @@ for emoji1 in range(1, n):
                 solution = True
 if not solution:
     print("При заданных n и m решений не существует.")
+# Делители-2
+a = int(input())
+b = int(input())
+max_sum = 0
+best_num = 0
+for i in range(a, b + 1):
+    current_sum = 0
+    for j in range(1, i + 1):
+        if i % j == 0:
+            current_sum += j
+    if current_sum >= max_sum:
+        max_sum = current_sum
+        best_num = i
+print(best_num, max_sum)
+
+
+
+
 
 
 
