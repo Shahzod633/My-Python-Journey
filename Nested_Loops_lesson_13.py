@@ -131,7 +131,7 @@ n = int(input())
 while n > 9:
     sum_digits = 0
     while n > 0:
-        sum_digits += n % 10  # Берем последнюю цифру
+        sum_digits += n % 10  # Берем  последнюю цифру
         n //= 10              # Отбрасываем последнюю цифру
     n = sum_digits
 
