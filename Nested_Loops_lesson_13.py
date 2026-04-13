@@ -119,6 +119,12 @@ for i in range(1, n + 1):
         print(j, end='')
     print()
 
+# Красивое время
+n = int(input())
+for h in range(24):
+    m = h**n
+    if 0 <= m < 60:
+        print(f"{h:02}:{m:02}")
 
 
 
