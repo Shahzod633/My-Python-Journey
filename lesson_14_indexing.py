@@ -8,3 +8,17 @@ if total>0:
     print('Цифра')
 else:
     print('Цифр нет')
+
+# Сколько раз встречается '+' and "*"?
+a=input()
+total=0
+count=0
+for j in range(len(a)):
+    if '+' in a[j]:
+        total+=1
+    if '*' in a[j]:
+        count+=1
+print(f'Символ + встречается {total} раз')
+print(f'Символ * встречается {count} раз')
+
+    
