@@ -21,4 +21,19 @@ for j in range(len(a)):
 print(f'Символ + встречается {total} раз')
 print(f'Символ * встречается {count} раз')
 
+# Одинаковые соседи    
+a=input()
+total=0
+for j in range(len(a)-1):
+    if a[j] == a[j + 1]:
+        total+=1
+print(total)
     
+    
+    
+    
+
+
+
+
+
