@@ -53,7 +53,12 @@ while a!=0:
 for i in range(-1,-len(s)-1,-1):
     print(s[i], end="")
 
-
+# Палиндром
+a=input()
+if a[:]==a[::-1]:
+    print('YES')
+else:
+    print('NO')
 
 
 
