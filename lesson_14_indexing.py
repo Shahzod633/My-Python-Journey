@@ -60,6 +60,21 @@ if a[:]==a[::-1]:
 else:
     print('NO')
 
+# Делаем срезы 1
+a=input()
+print(len(a))
+print(a[:]*3)
+print(a[0])
+print(a[:3])
+print(a[-3:])
+print(a[::-1])
+print(a[1:-1])
+
+
+2
+
+
+
 
 
 
