@@ -117,6 +117,17 @@ print(total)
 a = input()
 print(a.count(' ') + 1)
 
+# Минутка генетики
+a=input()
+a=a.lower()
+print('Аденин: ' + str(a.count('а')))
+print('Гуанин: ' + str(a.count('г')))
+print('Цитозин: ' + str(a.count('ц')))
+print('Тимин: ' + str(a.count('т')))
+
+
+
+
 
 
 
