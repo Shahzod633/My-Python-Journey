@@ -125,7 +125,15 @@ print('Гуанин: ' + str(a.count('г')))
 print('Цитозин: ' + str(a.count('ц')))
 print('Тимин: ' + str(a.count('т')))
 
+# Очень странные дела
+n = int(input())  # Считываем количество строк
+count_odi = 0     # Счетчик сообщений от Оди
 
+for _ in range(n):
+    message = input()
+    if message.count('11') >= 3:
+        count_odi += 1
+print(count_odi)
 
 
 
