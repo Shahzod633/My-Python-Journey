@@ -113,6 +113,10 @@ for j in range(len(a)):
 
 print(total)
 
+# Количество слов
+a = input()
+print(a.count(' ') + 1)
+
 
 
 
