@@ -145,6 +145,14 @@ for j in range(len(a)):
 
 print(total)
 
+# На вход программе подаётся строка текста. Напишите программу, которая проверяет, что строка заканчивается подстрокой .com или .ru.
+a=input()
+if a.endswith('.com') == True:
+    print('YES')
+elif a.endswith('.ru') == True:
+    print('YES')
+else:
+    print('NO')
 
 
 
