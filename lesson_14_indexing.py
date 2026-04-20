@@ -135,6 +135,15 @@ for _ in range(n):
         count_odi += 1
 print(count_odi)
 
+# Количество цифр  в слове 
+a = input()
+a=a.lower()
+total = 0
+for j in range(len(a)):
+    if a[j] in '0123456789':
+        total += 1
+
+print(total)
 
 
 
