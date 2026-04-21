@@ -181,7 +181,17 @@ last=s.rfind('h')
 b=s[:first] + s[last + 1:]
 print(b)
 
-
+# Плохие комментарии коменты состояшие из пробелов или пустые пробелы 
+n=int(input())
+total=0
+for j in range(n):
+    a=input()
+    total+=1
+    b=a.isspace()
+    if b==True or a=='':
+        print(str(total)+':', 'COMMENT SHOULD BE DELETED')
+    else:
+        print(str(total)+':', a)
 
 
 
