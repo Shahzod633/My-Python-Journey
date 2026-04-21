@@ -202,31 +202,28 @@ else:
     print('Incorrect')
 
 # Автомобильный номер Напишите программу, которая принимает на вход строку и проверяет, является ли эта строка корректным автомобильным номером.
-s = input()
-if len(s) == 9 or len(s) == 10:
-    
-    # Разбираем строку на части согласно формату: <Б><ЦЦЦ><ББ>_<регион>
-    part1_letter = s[0]          # <БУКВА>
-    part2_digits = s[1:4]        # <ЦИФРА><ЦИФРА><ЦИФРА>
-    part3_letters = s[4:6]       # <БУКВА><БУКВА>
-    part4_underscore = s[6]      # _
-    part5_region = s[7:]         # <ЦИФРА><ЦИФРА> или <ЦИФРА><ЦИФРА><ЦИФРА>
+s = input().strip()
 
-    # Проверяем каждое условие
-    is_valid = (
-        part1_letter.isalpha() and part1_letter.isupper() and
-        part2_digits.isdigit() and
-        part3_letters.isalpha() and part3_letters.isupper() and
-        part4_underscore == '_' and
-        part5_region.isdigit()
-    )
-    
-    if is_valid:
+allowed = "АВЕКМНОРСТУХ"  
+
+if len(s) in [9, 10]:
+    p1 = s[0]
+    p2 = s[1:4]
+    p3 = s[4:6]
+    p4 = s[6]
+    p5 = s[7:]
+
+    if (p1 in allowed and
+        p2.isdigit() and
+        p3[0] in allowed and p3[1] in allowed and
+        p4 == '_' and
+        p5.isdigit()):
         print('YES')
     else:
         print('NO')
 else:
     print('NO')
+
 
 
 
