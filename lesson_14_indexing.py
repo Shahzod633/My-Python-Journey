@@ -224,6 +224,13 @@ if len(s) in [9, 10]:
 else:
     print('NO')
 
+# Используя метод format(), дополните приведённый ниже код так, чтобы он вывел текст: In 2010, someone paid 10k Bitcoin for two pizzas.
+s = 'In {0}, someone paid {1} {2} for two pizzas.'
+year=2010
+cash='10k'
+money='Bitcoin'
+print(f'In {year}, someone paid {cash} {money} for two pizzas.')
+
 
 
 
