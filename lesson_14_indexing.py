@@ -193,6 +193,13 @@ for j in range(n):
     else:
         print(str(total)+':', a)
 
+# Проверь никнейм условие начинается с @ и 5<=len(a)<=15 и все букви нижнего регистра 
+a=input()
+body=a[1:]
+if (a.startswith('@')==True) and 5<=len(a)<=15 and (body.isalnum()==True) and (body == body.lower()) :
+    print('Correct')
+else:
+    print('Incorrect')
 
 
 
