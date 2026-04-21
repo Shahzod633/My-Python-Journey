@@ -154,6 +154,19 @@ elif a.endswith('.ru') == True:
 else:
     print('NO')
 
+# Самый частотный символ
+s=input()
+maxi=0
+ma=0
+count=0
+for i in s:
+    if s.count(i) >=maxi:
+        maxi=s.count(i)
+        ma=i
+print(ma)
+
+
+
 
 
 
