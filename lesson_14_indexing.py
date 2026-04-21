@@ -231,6 +231,12 @@ cash='10k'
 money='Bitcoin'
 print(f'In {year}, someone paid {cash} {money} for two pizzas.')
 
+# другой способ предидушей задачи 
+s = 'In {}, someone paid {} {} for two pizzas.'
+year=2010
+cash='10K'
+money='Bitcoin'
+print(s.format(year, cash, money))
 
 
 
