@@ -307,6 +307,12 @@ elif maxi == s3:
 else:
     print(d)
 
+# Стоимость ответа
+a=input()
+summ=0
+for j in a:
+    summ+=ord(j)
+print(f"Текст сообщения: '{a}'", f'Стоимость сообщения: {summ*3}🐝', sep='\n')
 
 
 
