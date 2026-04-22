@@ -280,6 +280,32 @@ a=input()
 for j in a:
     print(ord(j), end=" ")
 
+# Самое тяжёлое слово  
+a=input()
+b=input()
+c=input()
+d=input()
+s1=0
+s2=0
+s3=0
+s4=0
+for j in a:
+    s1+=ord(j)
+for i in b:
+    s2+=ord(i)
+for f in c:
+    s3+=ord(f)
+for n in d:
+    s4+=ord(n)
+maxi=max(s1, s2, s3, s4)
+if maxi==s1:
+    print(a)
+elif maxi == s2:
+    print(b)
+elif maxi == s3:
+    print(c)
+else:
+    print(d)
 
 
 
