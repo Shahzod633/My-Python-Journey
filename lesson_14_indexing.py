@@ -275,6 +275,10 @@ m=min(a,b)
 for j in range(m, M+1):
     print(chr(j), end=" ")
 
+# Простой шифр
+a=input()
+for j in a:
+    print(ord(j), end=" ")
 
 
 
