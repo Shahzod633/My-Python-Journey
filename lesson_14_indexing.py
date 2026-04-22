@@ -256,6 +256,18 @@ else:
     print(f"#{a} ДЕНЬ: ТЕКУЩИЙ ВЕС = {b} кг, ЦЕЛЬ по ВЕСУ = {c} кг")
 
 
+ # Какая следующая буква?
+a=input()
+b=ord(a)
+total=0
+total+=b
+c=chr(total+1)
+if c=='а':
+    print('Дальше букв нет')
+else:
+    print(chr(total+1))
+
+
 
 
 
