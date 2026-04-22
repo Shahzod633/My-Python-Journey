@@ -314,7 +314,33 @@ for j in a:
     summ+=ord(j)
 print(f"Текст сообщения: '{a}'", f'Стоимость сообщения: {summ*3}🐝', sep='\n')
 
-
+# Накручиваем стоимость ответа
+s=input()
+summ=0
+sum1=0
+for j in s:
+    summ+=ord(j)
+s = s.replace("e", "е")
+s = s.replace("y", "у")
+s = s.replace("o", "о")
+s = s.replace("p", "р")
+s = s.replace("a", "а")
+s = s.replace("x", "х")
+s = s.replace("c", "с")
+s = s.replace("E", "Е")
+s = s.replace("T", "Т")
+s = s.replace("O", "О")
+s = s.replace("P", "Р")
+s = s.replace("A", "А")
+s = s.replace("H", "Н")
+s = s.replace("X", "Х")
+s = s.replace("C", "С")
+s = s.replace("B", "В")
+s = s.replace("M", "М")  
+for i in s:
+    sum1+=ord(i)
+print(f'Старая стоимость: {summ*3}🐝')
+print(f'Новая стоимость: {sum1*3}🐝')
 
 
 
