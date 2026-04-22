@@ -49,7 +49,7 @@ s=""
 while a!=0:
     g = a%2
     s=s+str(g)
-    a=a//2
+    a= a//2
 for i in range(-1,-len(s)-1,-1):
     print(s[i], end="")
 
@@ -360,7 +360,15 @@ while "[u-" in s:
 
 print(s)
 
+# Шифр Цезаря 
+a = int(input()) # Шаг сдвига
+s = input()      # Строка
 
+for j in range(len(s)):
+    n = ord(s[j]) - a 
+    if n < 97:
+        n = 122 - (96 - n)
+    print(chr(n), end='')
 
 
 
