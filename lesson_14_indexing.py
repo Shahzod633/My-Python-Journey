@@ -370,7 +370,16 @@ for j in range(len(s)):
         n = 122 - (96 - n)
     print(chr(n), end='')
 
-
+# Волшебное число 
+from math import pow
+a,b,c,d = input(), input(), input(), input(), 
+maxi=max(a,b,c,d)
+mini=min(a,b,c,d)
+w=maxi[-1]
+w=ord(w)
+v=mini[-1]
+v=ord(v)
+print(int(pow((v*w),2)))
 
 
 
