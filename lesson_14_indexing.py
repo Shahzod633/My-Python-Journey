@@ -400,8 +400,26 @@ print(f'Минимальная строка ⬇️: {min1}')
 print(f'Максимальная строка ⬆️: {max1}')
 
 
+# Необычное сравнение
+s1 = input()
+s2 = input()
 
+clean_s1 = ""
+clean_s2 = ""
 
+for i in s1:
+    # Проверяем английские буквы И русские буквы
+    if 'a' <= i <= 'z' or 'A' <= i <= 'Z' or 'а' <= i <= 'я' or 'А' <= i <= 'Я':
+        clean_s1 += i.lower()
+
+for i in s2:
+    if 'a' <= i <= 'z' or 'A' <= i <= 'Z' or 'а' <= i <= 'я' or 'А' <= i <= 'Я':
+        clean_s2 += i.lower()
+
+if clean_s1 == clean_s2:
+    print("YES")
+else:
+    print("NO")
 
 
 
