@@ -381,6 +381,24 @@ v=mini[-1]
 v=ord(v)
 print(int(pow((v*w),2)))
 
+# Строковые минимум и максимум
+a = input()
+if a != 'КОНЕЦ':
+    max1 = a
+    min1 = a
+    while True:
+        a = input()
+        if a == 'КОНЕЦ':
+            break
+        if a > max1:
+            max1 = a
+        if a < min1:
+            min1 = a
+
+    # Вывод результата строго по формату из задания
+print(f'Минимальная строка ⬇️: {min1}')
+print(f'Максимальная строка ⬆️: {max1}')
+
 
 
 
