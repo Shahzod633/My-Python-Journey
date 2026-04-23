@@ -421,7 +421,19 @@ if clean_s1 == clean_s2:
 else:
     print("NO")
 
-
+# Сортируем слова
+a=input()
+b=input()
+c=input()
+mini=min(a,b,c)
+maxi=max(a,b,c)
+if (mini==a and maxi==b) or (mini==b and maxi==a):
+    z=c
+elif (mini==c and maxi==b) or (mini==b and maxi==c):
+    z=a
+else:
+    z=b
+print(mini, z, maxi)
 
 
 
