@@ -7,3 +7,10 @@ n = int(input())
 Alist = [chr(i) for i in range(97, 97 + n)]
 print(Alist)
 
+#Список нечётных чисел
+a=int(input())
+Alist=[j for j in range(1, a+1) if j%2!=0]
+print(Alist)
+    
+
+
