@@ -435,7 +435,17 @@ else:
     z=b
 print(mini, z, maxi)
 
-
+# Название класса 
+n=int(input())
+b='0123456789'
+h=ord('А')
+m=ord('П')
+for j in range(n):
+    c=input()
+    if len(c)==2 and (c[0] in b) and h<=ord(c[1])<=m:
+        print('YES')
+    else:
+        print('NO')
 
 
 
