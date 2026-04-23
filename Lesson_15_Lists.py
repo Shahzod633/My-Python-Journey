@@ -2,5 +2,8 @@
 a=int(input())
 print(list(range(1, a+1)))
 
-
+# Список букв
+n = int(input())
+Alist = [chr(i) for i in range(97, 97 + n)]
+print(Alist)
 
