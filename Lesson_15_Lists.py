@@ -33,4 +33,7 @@ rainbow[-1]='Фиолетовый'
 
 print(rainbow)
 
+# "перевёрнутый" список languages (то есть элементы будут идти в обратном порядке).
+languages = ['Chinese', 'Spanish', 'English', 'Hindi', 'Arabic', 'Bengali', 'Portuguese', 'Russian', 'Japanese', 'Lahnda']
+print(languages[::-1])
 
