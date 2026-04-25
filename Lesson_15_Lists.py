@@ -26,4 +26,11 @@ average =sum(evens)/len(evens)
 
 print(average)
 
+# елемент списка имеющий значение Green заменился на значение Зеленый, а элемент Violet – на Фиолетовый. Далее необходимо вывести полученный список.
+rainbow = ['Red', 'Orange', 'Yellow', 'Green', 'Blue', 'Indigo', 'Violet']
+rainbow[3]='Зеленый'
+rainbow[-1]='Фиолетовый'
+
+print(rainbow)
+
 
