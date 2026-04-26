@@ -43,3 +43,13 @@ numbers2 = [6]
 numbers3 = [7, 8, 9, 10, 11, 12, 13]
 
 print((numbers1*2)+(numbers2*9)+(numbers3))
+
+# Напишите программу, выводящую следующий список: ['a', 'bb', 'ccc', 'dddd', 'eeeee', 'ffffff', ...]
+numbers = [] # Создаем пустой список
+
+for i in range(1, 27):
+    # ord('a') возвращает 97. Прибавляя (i-1), мы идем по алфавиту.
+    char = chr(ord('a') + i - 1) 
+    numbers.append(char * i)
+
+print(numbers)
