@@ -61,3 +61,13 @@ for j in range(1, n+1):
     a=input()
     List.append(a)
 print(List)
+
+# На вход программе подаются натуральное число n а затем n целых чисел. Напишите программу, которая создаёт из указанных чисел список их кубов, а затем выводит его.
+from math import pow
+n=int(input())
+List=[]
+for j in range(1, n+1):
+    a=int(input())
+    a=int(pow(a, 3))
+    List.append(a)
+print(List)
