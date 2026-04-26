@@ -53,3 +53,11 @@ for i in range(1, 27):
     numbers.append(char * i)
 
 print(numbers)
+
+#На вход программе подаются натуральное число n а затем n строк. Напишите программу, которая создаёт из указанных строк список, а затем выводит его.
+n=int(input())
+List=[]
+for j in range(1, n+1):
+    a=input()
+    List.append(a)
+print(List)
