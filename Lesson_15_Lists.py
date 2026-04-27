@@ -91,3 +91,14 @@ for j in range(1, n+1):
         List.append(j)
 print(List)
 
+# На вход программе подаётся натуральное число n(n>=2) Затем поступают n целых чисел. Напишите программу, которая создаёт из указанных чисел список, состоящий из сумм соседних чисел.
+n=int(input())
+sp1=[]
+sp2=[]
+for j in range(1, n+1):
+    a=int(input())
+    sp1.append(a)
+for i in range(len(sp1)-1):
+    sp2.append(sp1[i] + sp1[i+1])
+print(sp2) 
+
