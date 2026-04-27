@@ -113,3 +113,15 @@ for i in range(len(List)):
     if i%2==0:
         sp1.append(List[i])
 print(sp1)
+
+# На вход программе подаются натуральное число n и n строк а азтем число k апишите программу, которая выводит K -ую букву из введённых строк на одной строке без пробелов.\
+n=int(input())
+List=[]
+Sp=[]
+for j in range(1, n+1):
+    a=input()
+    List.append(a)
+b=int(input())
+for i in List:
+    if len(i)>=b:
+        print(i[b - 1], end="") 
