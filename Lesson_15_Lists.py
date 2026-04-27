@@ -125,3 +125,11 @@ b=int(input())
 for i in List:
     if len(i)>=b:
         print(i[b - 1], end="") 
+
+# Символы всех строк
+n=int(input())
+sp1=[]
+for j in range(1, n+1):
+    a=input()
+    sp1.extend(a)
+print(sp1)
