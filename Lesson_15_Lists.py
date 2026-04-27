@@ -102,3 +102,14 @@ for i in range(len(sp1)-1):
     sp2.append(sp1[i] + sp1[i+1])
 print(sp2) 
 
+# Удалите нечётные индексы
+n=int(input())
+List=[]
+sp1=[]
+for j in range(1, n+1):
+    a=int(input())
+    List.append(a)
+for i in range(len(List)):
+    if i%2==0:
+        sp1.append(List[i])
+print(sp1)
