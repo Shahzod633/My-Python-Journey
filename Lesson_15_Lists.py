@@ -133,3 +133,12 @@ for j in range(1, n+1):
     a=input()
     sp1.extend(a)
 print(sp1)
+
+# Дополните приведённый ниже код так, чтобы он вывел сумму квадратов элементов списка numbers. numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
+numbers = [1, 78, 23, -65, 99, 9089, 34, -32, 0, -67, 1, 11, 111]
+num=[]
+for j in numbers:
+    b=pow(j, 2)
+    num.append(b)
+print(sum(num))
+
