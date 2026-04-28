@@ -142,3 +142,20 @@ for j in numbers:
     num.append(b)
 print(sum(num))
 
+# Negatives, Zeros and Positives
+n=int(input())
+ot=[]
+z=[]
+po=[]
+for j in range(n):
+    num=int(input())
+    if num<0:
+        ot.append(num)
+    elif num==0:
+        z.append(num)
+    else:
+        po.append(num)
+print(*ot, sep='\n')
+print(*z, sep='\n')
+print(*po, sep='\n')
+
