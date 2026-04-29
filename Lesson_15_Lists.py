@@ -159,3 +159,12 @@ print(*ot, sep='\n')
 print(*z, sep='\n')
 print(*po, sep='\n')
 
+#  Remove outliers
+n = int(input())
+nums = [int(input()) for _ in range(n)]
+mx = max(nums)
+mn = min(nums)
+# Печатаем только те числа, которые не равны максимуму и минимуму
+for x in nums:
+    if x != mx and x != mn:
+        print(x)
