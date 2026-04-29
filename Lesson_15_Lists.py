@@ -168,3 +168,20 @@ mn = min(nums)
 for x in nums:
     if x != mx and x != mn:
         print(x)
+
+# Google search - 1
+n = int(input())
+strings = []
+
+# Шаг 1: Собираем "базу" строк
+for _ in range(n):
+    strings.append(input())
+
+# Шаг 2: Получаем поисковый запрос
+query = input()
+
+# Шаг 3: Ищем запрос в каждой строке
+for s in strings:
+    # Приводим обе части к нижнему регистру для поиска
+    if query.lower() in s.lower():
+        print(s)
