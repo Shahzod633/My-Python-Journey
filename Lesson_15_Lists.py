@@ -195,3 +195,8 @@ print('\n'.join(b))
 a=input()
 b=a.split()
 print(b[0][0],b[1][0],b[2][0], sep='.', end='.')
+
+# Windows OS
+a=input()
+b=a.split('\\')
+print("\n".join(b))
