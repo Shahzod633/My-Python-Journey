@@ -206,3 +206,16 @@ nums = [int(x) for x in input().split()]
 for j in nums:
     s='+'*j
     print(s)
+
+# Корректный ip-адрес
+n = [int(x) for x in input().split('.')]
+total=0
+for j in n:
+    if 0<=j<=255:
+        total+=1
+    else:
+        break
+if total==4:
+    print('ДА')
+else:
+    print('НЕТ')
