@@ -226,3 +226,18 @@ b=a.split()
 s=input()
 print(s.join(a))
 
+# Количество совпадающих пар
+a = input()
+b = a.split()
+total = 0
+
+for i in range(len(b)):
+    # Берем текущий элемент
+    n = b[i]
+    
+    # Перебираем все элементы ПРАВЕЕ текущего (чтобы не считать пары дважды)
+    for j in b[i + 1:]:
+        if n == j:
+            total += 1
+
+print(total)
